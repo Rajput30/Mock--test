@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #0b1120; color: white; font-family: sans-serif; }
+        .card-bg { background: linear-gradient(145deg, #1e293b, #0f172a); }
+        .soon { opacity: 0.6; filter: grayscale(1); }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Crack the Exam</h1>
+            <p class="text-gray-400 mt-2">India's biggest question bank</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card-bg p-6 rounded-2xl border border-blue-500/30 hover:border-blue-500 transition-all">
+                <h2 class="text-2xl font-bold mb-2">Board Exams</h2>
+                <p class="text-gray-400 mb-6">Class 10th & 12th</p>
+                <button class="w-full bg-blue-600 hover:bg-blue-500 py-3 rounded-xl font-semibold">Start Test</button>
+            </div>
+
+            <div class="card-bg p-6 rounded-2xl border border-gray-700 soon">
+                <h2 class="text-2xl font-bold mb-2">JEE Main</h2>
+                <p class="text-gray-400 mb-6">National Entrance</p>
+                <button disabled class="w-full bg-gray-700 py-3 rounded-xl font-semibold cursor-not-allowed">Coming Soon</button>
+            </div>
+
+            <div class="card-bg p-6 rounded-2xl border border-gray-700 soon">
+                <h2 class="text-2xl font-bold mb-2">NEET</h2>
+                <p class="text-gray-400 mb-6">Medical Entrance</p>
+                <button disabled class="w-full bg-gray-700 py-3 rounded-xl font-semibold cursor-not-allowed">Coming Soon</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
