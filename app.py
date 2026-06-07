@@ -1,10 +1,11 @@
-from flask import Flask, send_from_directory
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return send_from_directory('templates', 'index.html')
+    with open('templates/index.html', 'r', encoding='utf-8') as f:
+        return f.read()
 
 if __name__ == '__main__':
     app.run(debug=True)
