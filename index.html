@@ -23,7 +23,7 @@
   .screen.active { display:flex; }
 
   /* ── WELCOME ── */
-  #s-welcome { align-items:center; justify-content:center; text-align:center; padding:30px 20px; position:relative; overflow:hidden; }
+  #s-welcome { align-items:center; justify-content:flex-start; text-align:center; padding:50px 20px 60px; position:relative; overflow-x:hidden; overflow-y:auto; }
   .bg-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(185,79,255,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(185,79,255,0.06) 1px,transparent 1px); background-size:40px 40px; animation:gridMove 20s linear infinite; }
   @keyframes gridMove { to { background-position:40px 40px; } }
   .orb { position:absolute; border-radius:50%; filter:blur(80px); opacity:0.3; animation:pulseOrb 4s ease-in-out infinite alternate; }
@@ -206,5 +206,4 @@
   <div class="welcome-content">
     <div class="logo-badge">⚡ VedShikhar Portal</div>
     <h1 class="portal-name">VED<br>SHIKHAR</h1>
-    <p class="portal-sub">Science Mock Test Series</p>
-    <
+    <p class="portal-sub">Scienc
